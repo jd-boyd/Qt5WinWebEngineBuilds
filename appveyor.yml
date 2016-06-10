@@ -9,7 +9,7 @@ install:
 - cd c:\Qt5.5.0\
 - dir
 - mkdir icu
-- curl -O http://download.icu-project.org/files/icu4c/55.1/icu4c-55_1-src.zip
+- curl -O http://tenet.dl.sourceforge.net/project/icu/ICU4C/55.1/icu4c-55_1-src.zip
 - cd icu
 - 7z x ..\icu4c-55_1-src.zip
 - cd ..
@@ -20,7 +20,7 @@ install:
 - 7z x ..\openssl-1.0.2h.tar
 - cd ..\
 - mkdir qt5
-- curl -O http://download.qt.io/official_releases/qt/5.5/5.5.0/single/qt-everywhere-opensource-src-5.5.0.zip
+- curl -O http://qt.mirror.constant.com/archive/qt/5.5/5.5.0/single/qt-everywhere-opensource-src-5.5.0.zip
 - cd qt5
 - 7z x ..\qt-everywhere-opensource-src-5.5.0.zip
 - cd ..
