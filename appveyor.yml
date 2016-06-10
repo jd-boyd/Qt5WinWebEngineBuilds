@@ -3,8 +3,8 @@ environment:
   devenv: '"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"'
 install:
 #- C:\MinGW\bin\mingw-get update
-- C:\MinGW\bin\mingw-get install msys-flex
-- C:\MinGW\bin\mingw-get install msys-bison
+#- C:\MinGW\bin\mingw-get install msys-flex
+#- C:\MinGW\bin\mingw-get install msys-bison
 - C:\MinGW\bin\mingw-get install msys-gperf
 - mkdir c:\Qt5.5.0\
 - copy *.bat c:\Qt5.5.0\
@@ -19,9 +19,7 @@ install:
 - mkdir openssl
 - curl -O https://www.openssl.org/source/openssl-1.0.2h.tar.gz
 - 7z x openssl-1.0.2h.tar.gz
-- cd openssl
-- 7z x ..\openssl-1.0.2h.tar
-- cd ..\
+- 7z x openssl-1.0.2h.tar
 - mkdir qt5
 - curl -O http://qt.mirror.constant.com/archive/qt/5.5/5.5.0/single/qt-everywhere-opensource-src-5.5.0.zip
 - cd qt5
