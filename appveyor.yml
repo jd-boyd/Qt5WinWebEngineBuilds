@@ -1,9 +1,9 @@
 environment: {}
 install:
-- C:\MinGW\bin\mingw-get update
+#- C:\MinGW\bin\mingw-get update
 - C:\MinGW\bin\mingw-get install msys-flex
 - C:\MinGW\bin\mingw-get install msys-bison
-- C:\MinGW\bin\mingw-get install gperf
+- C:\MinGW\bin\mingw-get install msys-gperf
 - mkdir c:\Qt5.5.0\
 - copy *.bat c:\Qt5.5.0\
 - cd c:\Qt5.5.0\
@@ -12,6 +12,7 @@ install:
 - curl -O http://tenet.dl.sourceforge.net/project/icu/ICU4C/55.1/icu4c-55_1-src.zip
 - cd icu
 - 7z x ..\icu4c-55_1-src.zip
+- devenv.exe /upgrade source\allionone\allinone.sln
 - cd ..
 - mkdir openssl
 - curl -O https://www.openssl.org/source/openssl-1.0.2h.tar.gz
