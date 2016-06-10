@@ -26,9 +26,9 @@ install:
 - cd ..
 
 build_script:
-- call c:\qt\buildicu.bat
-- call c:\qt\buildopenssl.bat
-- call c:\qt\buildqt.bat
+- call c:\Qt5.5.0\buildicu.bat
+- call c:\Qt5.5.0\buildopenssl.bat
+- call c:\Qt5.5.0\buildqt.bat
 
 test_script:
   # Put your test command here.
