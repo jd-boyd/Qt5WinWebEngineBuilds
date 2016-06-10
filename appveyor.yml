@@ -1,11 +1,12 @@
 environment: {}
 install:
+- C:\MinGW\bin\mingw-get update
 - C:\MinGW\bin\mingw-get install flex
 - C:\MinGW\bin\mingw-get install bison
 - C:\MinGW\bin\mingw-get install gperf
-- mkdir c:\Qt\
-- copy *.bat c:\Qt\
-- cd c:\Qt\
+- mkdir c:\Qt5.5.0\
+- copy *.bat c:\Qt5.5.0\
+- cd c:\Qt5.5.0\
 - dir
 - mkdir icu
 - curl -O http://download.icu-project.org/files/icu4c/55.1/icu4c-55_1-src.zip
