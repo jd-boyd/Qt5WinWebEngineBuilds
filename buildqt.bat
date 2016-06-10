@@ -1,5 +1,4 @@
-set BUILD_ROOT=C:\qt
-
+set BUILD_ROOT=c:\Qt5.5.0\
 
 REM Set up \Microsoft Visual Studio 2013, where <arch> is \c amd64, \c x86, etc.
 CALL "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" x86_amd64
