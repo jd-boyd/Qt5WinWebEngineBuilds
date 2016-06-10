@@ -8,6 +8,6 @@ set CL=/MP
 
 REM Build icu
 cd %BUILD_ROOT%\icu
-msbuild source\allinone\allinone.sln /m /target:Build /property:Configuration=Release;Platform=x64
-msbuild source\allinone\allinone.sln /m /target:Build /property:Configuration=Debug;Platform=x64
+msbuild source\allinone\allinone.sln /m /target:Build /property:Configuration=Release;Platform=Win32
+msbuild source\allinone\allinone.sln /m /target:Build /property:Configuration=Debug;Platform=Win32
 cd ..

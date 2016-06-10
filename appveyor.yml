@@ -12,9 +12,9 @@ install:
 - dir
 - mkdir icu
 - curl -O http://tenet.dl.sourceforge.net/project/icu/ICU4C/55.1/icu4c-55_1-src.zip
+- 7z x icu4c-55_1-src.zip
 - cd icu
-- 7z x ..\icu4c-55_1-src.zip
-- '%devenv% /upgrade source\allionone\allinone.sln'
+- '%devenv% source\allionone\allinone.sln /upgrade'
 - cd ..
 - mkdir openssl
 - curl -O https://www.openssl.org/source/openssl-1.0.2h.tar.gz
