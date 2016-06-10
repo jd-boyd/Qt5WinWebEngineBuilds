@@ -3,8 +3,6 @@ environment:
   devenv: '"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"'
 install:
 #- C:\MinGW\bin\mingw-get update
-#- C:\MinGW\bin\mingw-get install msys-flex
-#- C:\MinGW\bin\mingw-get install msys-bison
 - C:\MinGW\bin\mingw-get install msys-gperf
 - mkdir c:\Qt5.5.0\
 - copy *.bat c:\Qt5.5.0\
