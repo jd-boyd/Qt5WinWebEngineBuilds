@@ -12,7 +12,7 @@ install:
 - curl -O http://tenet.dl.sourceforge.net/project/icu/ICU4C/55.1/icu4c-55_1-src.zip
 - cd icu
 - 7z x ..\icu4c-55_1-src.zip
-- devenv.exe /upgrade source\allionone\allinone.sln
+- C:\ProgramFiles(x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe /upgrade source\allionone\allinone.sln
 - cd ..
 - mkdir openssl
 - curl -O https://www.openssl.org/source/openssl-1.0.2h.tar.gz
