@@ -30,6 +30,7 @@ build_script:
 - call c:\Qt5.5.0\buildicu.bat
 - call c:\Qt5.5.0\buildopenssl.bat
 - call c:\Qt5.5.0\buildqt.bat
+- 7z.exe a c:\Qt5.5.0.7z c:\Qt5.5.0\
 
 test_script:
   # Put your test command here.
@@ -48,9 +49,10 @@ after_test:
   # interpreter
 #  - "build.cmd %PYTHON%\\python.exe setup.py bdist_wheel"
 
-# artifacts:
+artifacts:
  # bdist_wheel puts your built wheel in the dist directory
 #  - path: dist\*
+- path: c:\Qt5.5.0.7z
 
 #on_success:
 #  You can use this step to upload your artifacts to a public website.
