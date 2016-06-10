@@ -1,8 +1,8 @@
 environment: {}
 install:
 - C:\MinGW\bin\mingw-get update
-- C:\MinGW\bin\mingw-get install flex
-- C:\MinGW\bin\mingw-get install bison
+- C:\MinGW\bin\mingw-get install msys-flex
+- C:\MinGW\bin\mingw-get install msys-bison
 - C:\MinGW\bin\mingw-get install gperf
 - mkdir c:\Qt5.5.0\
 - copy *.bat c:\Qt5.5.0\
