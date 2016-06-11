@@ -23,6 +23,7 @@ install:
 - cd qt5
 - 7z x ..\qt-everywhere-opensource-src-5.5.0.zip
 - cd ..
+- dir qt5
 
 build_script:
 - call c:\Qt5.5.0\buildicu.bat
