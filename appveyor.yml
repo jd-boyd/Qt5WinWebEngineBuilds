@@ -25,6 +25,8 @@ install:
 #- cd ..
 - dir qt-everywhere-opensource-src-5.5.0
 - move qt-everywhere-opensource-src-5.5.0 qt5 
+- dir qt5
+
 build_script:
 - call c:\Qt5.5.0\buildicu.bat
 - call c:\Qt5.5.0\buildopenssl.bat
