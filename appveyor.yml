@@ -18,13 +18,13 @@ install:
 - curl -O https://www.openssl.org/source/openssl-1.0.2h.tar.gz
 - 7z x openssl-1.0.2h.tar.gz
 - 7z x openssl-1.0.2h.tar
-- mkdir qt5
+#- mkdir qt5
 - curl -O http://qt.mirror.constant.com/archive/qt/5.5/5.5.0/single/qt-everywhere-opensource-src-5.5.0.zip
 #- cd qt5
 - 7z x qt-everywhere-opensource-src-5.5.0.zip
 #- cd ..
 - dir qt-everywhere-opensource-src-5.5.0
-
+- move qt-everywhere-opensource-src-5.5.0 qt5 
 build_script:
 - call c:\Qt5.5.0\buildicu.bat
 - call c:\Qt5.5.0\buildopenssl.bat
