@@ -33,7 +33,7 @@ SET QMAKESPEC=win32-msvc2013
 
 cd %QT_ROOT%
 
-CALL configure -prefix %QT_ROOT%\build -icu -opengl dynamic -release -nomake examples -opensource -confirm-license  -no-gif  -qt-libpng -qt-libjpeg -openssl -qt-pcre -no-cups -no-dbus -skip qtwebkit -skip qtconnectivity -skip qtdoc -skip qtgraphicaleffects -skip qtmultimedia -skip qtsensors -skip qtserialport -skip qtwebkit-examples -skip qtquick1 -skip qt3d
+CALL configure -prefix %QT_ROOT%\build -icu -opengl dynamic -release -nomake examples -opensource -confirm-license  -qt-libpng -qt-libjpeg -openssl -qt-pcre -no-cups -no-dbus -skip qtwebkit -skip qtconnectivity -skip qtdoc -skip qtgraphicaleffects -skip qtsensors -skip qtserialport -skip qtwebkit-examples -skip qtquick1 -skip qt3d
 
 nmake
 nmake install
