@@ -29,6 +29,7 @@ install:
 
 build_script:
 - call c:\Qt5.5.0\buildicu.bat
+- C:\msys64\usr\bin\find c:\qt5.5.0\icu
 - call c:\Qt5.5.0\buildopenssl.bat
 - call c:\Qt5.5.0\buildqt.bat
 - 7z.exe a c:\Qt5.5.0.7z c:\Qt5.5.0\
