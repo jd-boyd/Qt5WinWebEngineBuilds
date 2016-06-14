@@ -8,12 +8,14 @@ install:
 - copy *.bat c:\Qt5.5.0\
 - cd c:\Qt5.5.0\
 - dir
-- mkdir icu
-- curl -O http://tenet.dl.sourceforge.net/project/icu/ICU4C/55.1/icu4c-55_1-src.zip
-- 7z x icu4c-55_1-src.zip
-- cd icu
-- '%devenv% source\allionone\allinone.sln /upgrade'
-- cd ..
+- curl -L -O https://sourceforge.net/projects/gnuwin32/files/gperf/3.0.1/gperf-3.0.1.exe
+- .\gperf-3.0.1.exe /VERYSILENT /SUPPRESSMSGBOXES /LOG=.\gperf_install.log
+#- mkdir icu
+#- curl -O http://tenet.dl.sourceforge.net/project/icu/ICU4C/55.1/icu4c-55_1-src.zip
+#- 7z x icu4c-55_1-src.zip
+#- cd icu
+#- '%devenv% source\allionone\allinone.sln /upgrade'
+#- cd ..
 - mkdir openssl
 - curl -O https://www.openssl.org/source/openssl-1.0.2h.tar.gz
 - 7z x openssl-1.0.2h.tar.gz
@@ -28,8 +30,8 @@ install:
 - dir qt5
 
 build_script:
-- call c:\Qt5.5.0\buildicu.bat
-- C:\msys64\usr\bin\find c:\qt5.5.0\icu
+#- call c:\Qt5.5.0\buildicu.bat
+#- C:\msys64\usr\bin\find c:\qt5.5.0\icu
 - call c:\Qt5.5.0\buildopenssl.bat
 - call c:\Qt5.5.0\buildqt.bat
 - 7z.exe a c:\Qt5.5.0.7z c:\Qt5.5.0\
