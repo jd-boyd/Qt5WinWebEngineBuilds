@@ -8,8 +8,8 @@ set CL=/MP
 
 REM Add ICU dirs to the proper path (include, libs , bin)
 set INCLUDE=%INCLUDE%;%BUILD_ROOT%\icu\include
-set LIB=%LIB%;%BUILD_ROOT%\icu\lib64
-set PATH=%PATH%;%BUILD_ROOT%\icu\bin64
+set LIB=%LIB%;%BUILD_ROOT%\icu\lib
+set PATH=%PATH%;%BUILD_ROOT%\icu\bin
 
 
 REM Add OpenSSL dirs to the proper path (include, libs , bin)
